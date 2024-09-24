@@ -1,0 +1,101 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.links a {
+  text-align: left;
+  color: black !important;
+  text-decoration: none;
+}
+
+.image-container {
+  display: grid; /* NEW */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+
+}
+
+.mes {
+  font-family: "Poppins", sans-serif;
+}
+
+.images {
+  width: 450px; /* Define uma largura fixa para as imagens */
+  height: 450px; /* Define uma altura fixa igual à largura para manter o formato 1x1 */
+  object-fit: cover; /* Ajusta a imagem para preencher o quadrado sem distorcer */
+  display: block;
+}
+
+.logo{
+  width: 100px;
+  border-radius: 50%;
+}
+.main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+footer {
+  text-align: center;
+  color: #6D6D4A;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.creative {
+  color: #6D6D4A;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
