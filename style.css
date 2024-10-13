@@ -1,0 +1,86 @@
+body {
+  font-family: "Afacad Flux", sans-serif;
+  margin: 50px 350px 0 350px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  align-items: center;
+  }
+  
+.links a {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  }
+
+a {
+  color: black;
+  text-decoration: none;
+  }
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  }
+  
+.legend {
+  text-align: center;
+  }
+  
+  .fotocapa {
+  margin: 80px 0px 60px 0px;
+  }
+
+.images {
+  width: 250px; /* Define uma largura fixa para as imagens */
+  height: 250px; /* Define uma altura fixa igual à largura para manter o formato 1x1 */
+  object-fit: cover; /* Ajusta a imagem para preencher o quadrado sem distorcer */
+  display: block;
+  }
+
+.image-container {
+  display: grid; /* NEW */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 120px 120px;
+  margin: 50px 50px 0 50px;
+
+  }
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  margin: 50px auto;
+  text-align: left;
+  width: 50%;
+}
+
+.cab-blog-titulo {
+  margin:0;
+  padding:0;
+  font-weight: 500;
+}
+
+.cab-blog-data {
+  margin:0;
+  padding:0;
+  font-weight: 150;
+  font-size: 15px;
+}
+
+.texto {
+  margin-top: 20px;
+  margin-bottom:100px;
+  padding:0;
+}
+
+.imagem-texto {
+  width: 500px; /* Define uma largura fixa para as imagens */
+  height: 300px; /* Define uma altura fixa igual à largura para manter o formato 1x1 */
+  object-fit: cover; /* Ajusta a imagem para preencher o quadrado sem distorcer */
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px; /* Adiciona cantos arredondados */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
