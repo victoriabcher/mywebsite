@@ -1,86 +1,123 @@
+/* ---------------------HEADER--------------------- */
 body {
-  font-family: "Afacad Flux", sans-serif;
-  margin: 50px 350px 0 350px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  min-height: 95vh;
-  align-items: center;
-  }
-  
-.links a {
-  text-align: center;
-  color: black;
-  text-decoration: none;
-  }
-
-a {
-  color: black;
-  text-decoration: none;
-  }
-
-.links {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  }
-  
-.legend {
-  text-align: center;
-  }
-  
-  .fotocapa {
-  margin: 80px 0px 60px 0px;
-  }
-
-.images {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-  }
-
-.image-container {
-  display: grid; /* NEW */
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 120px 120px;
-  margin: 50px 50px 0 50px;
-
-  }
-
-.blog-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); 
-  margin: 50px auto;
-  text-align: left;
-  width: 50%;
+    margin: 30px 30px 0px 30px;
+    font-family: "Geist Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    background-color: rgb(255, 255, 255);
 }
 
-.cab-blog-titulo {
-  margin:0;
-  padding:0;
-  font-weight: 500;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cab-blog-data {
-  margin:0;
-  padding:0;
-  font-weight: 150;
-  font-size: 15px;
+.header .name {
+    font-size: 20px;
+    font-weight: lighter;
 }
 
-.texto {
-  margin-top: 20px;
-  margin-bottom:100px;
-  padding:0;
+.header .menu {
+    display: flex;
+    gap: 15px;
 }
 
-.imagem-texto {
-  width: 500px;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+.header .menu a {
+    text-decoration: none;
+    color: #2E2E2E;
+    font-size: 15px;
+
 }
+
+.header .menu a:hover {
+    color: #84B693;
+}
+
+
+* {
+  color: var(--text); 
+  line-height: 1.6;  
+  letter-spacing: .025em; 
+  font-family: "Geist Mono", monospace;}
+
+/* ---------------------CONTENT--------------------- */
+
+main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: 
+    "A B"
+    "C B";
+}
+
+.right-column {
+    grid-area: B;
+    height: 130px;
+    width: auto;
+    display: flex;
+}
+
+/* ---------------------FOOTER--------------------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    font-size: 12px;
+    font-weight: light;
+    text-align: right;
+}
+
+.circle1 {
+    width: 20px;
+    height: 20px;
+    background-color: #84B693;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle2 {
+    width: 20px;
+    height: 20px;
+    background-color: #DDAAD7;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle3 {
+    width: 20px;
+    height: 20px;
+    background-color: #2E2E2E;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle4 {
+    width: 20px;
+    height: 20px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.cover {
+    margin: 100px 0px 180px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.styled-image {
+    width: 10%;
+    height: auto;
+    display: inline;
+    transition: transform 0.3s;
+}
+
+.custom-underline {
+    text-decoration: underline;
+    text-decoration-color: #DDAAD7; /* Set underline color */
+    text-decoration-thickness: 3px;
+  }
